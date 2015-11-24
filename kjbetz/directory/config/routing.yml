@@ -1,3 +1,3 @@
 kjbetz_directory_main:
-    path: /directory/{name}
-    defaults: { _controller: service_name:method_name, foo: "bar" }
+    path: /directory/{order}
+    defaults: { _controller: service_name:method_name, order: "name" }

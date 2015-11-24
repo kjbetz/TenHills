@@ -1,4 +1,10 @@
-service_name:
-    class: \phpbb\kjbetz\directory
-    arguments:
+services:
+    kjbetz.directory.controller:
+        class: kjbetz\directory\controller\main
+        arguments:
+            - @controller.helper
+    kjbetz.directory.listener:
+        class: kjbetz\directory\event\main_listener
+        tags:
+            - { name: event.listener }
         
